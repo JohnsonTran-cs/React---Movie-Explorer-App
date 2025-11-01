@@ -1,0 +1,114 @@
+/* Taken from HW2*/
+/* Change to classes instead of ids to work with react*/
+
+
+.title {
+    color: white;
+    background-color: rgb(30, 39, 60);
+    font-weight: bold;
+    text-align: center;
+    padding: 4%;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 46, 71);
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+
+.search input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search select{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+    overflow: hidden;
+    transition: transform 0.2s;
+    text-align: center;
+    height: 100%;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+}
+
+.movie-card img,
+.no-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 1rem;
+    margin: 10px 5px 5px;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+}
+
+.card-info {
+    margin-bottom: 10px;
+}
+
+.movie-card p {
+    margin: 2px 0;
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.pagination button {
+    background-color: rgb(40, 110, 175);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.no-image {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1rem;
+}
